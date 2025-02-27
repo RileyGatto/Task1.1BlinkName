@@ -36,11 +36,9 @@ void setup() {
 
 void morse() {
     for(int i = 0; i < 5; i++) {
-          
+       if(restart) return;
+       if(digitalRead(buttonPin) == HIGH) restart = true;
         for(int j = 0; j < 4; j++) {
-          if(digitalRead(buttonPin) == HIGH) restart = true;
-          if(restart) return;
-          
           
           int symbol = Name[i][j];
 
