@@ -10,7 +10,7 @@ const int Dot = 500;
 const int Dash = 1500;
 const int Wait = 500;
 const int Next = 1500;
-#define buttonPin  A2
+#define buttonPin  2
 bool restart = false;
 
 
